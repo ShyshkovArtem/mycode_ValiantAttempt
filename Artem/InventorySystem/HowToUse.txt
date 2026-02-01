@@ -1,0 +1,19 @@
+# Inventory System — Quick Start
+
+## To use the system you need
+
+* Player prefab: `InventoryOwner` and `BindInventoryToUIFromPlayer` attached (already overridden in my branch).
+* UI: Canvas with InventoryPanel that has InventoryUIPresenter attached.
+* Slot prefab: `UI_invSlot` (already in my branch).
+
+## To create usable stuff
+
+1. Create data: *Create → RPG → Items → Item Definition* (set Id, name, icon, category, stack rules).
+2. Create action: *Create → RPG → Items → Actions → …* (e.g., Use Potion, Read Lore, Use Key) and add it to the definition’s Actions list.
+3. Resources rule: All ItemDefinition assets must live under a Resources folder (e.g., `Assets/Resources/Items/`).
+
+## Notes
+
+* Actions are mostly placeholders right now—they can be invoked but may not have in‑game effects yet. This will change after Sami finishes the refactor.
+* Buttons are wired in code; no need to set OnClick in Inspector.
+* If the Inventory panel is disabled at start, it will still sync when opened (presenter caches latest snapshot).

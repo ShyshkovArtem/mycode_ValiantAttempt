@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1115695201137266701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4218988903875715261}
+  - component: {fileID: 6632793993468771338}
+  - component: {fileID: 7330782165006399947}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4218988903875715261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115695201137266701}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6632793993468771338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115695201137266701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ae337bc770e024cadf282d3b993ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridParent: {fileID: 0}
+  slotPrefab: {fileID: 5122707253668765846, guid: 47eb870d9c4e2c84c96aabe6c046c7c0, type: 3}
+  fallbackIcon: {fileID: 0}
+  detailsRoot: {fileID: 0}
+  detailIcon: {fileID: 0}
+  detailName: {fileID: 0}
+  detailDesc: {fileID: 0}
+  detailUseButton: {fileID: 0}
+  detailDropButton: {fileID: 0}
+--- !u!114 &7330782165006399947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115695201137266701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c1edb6a312c9bc41a8170cf9b850b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryRoot: {fileID: 0}
+  presenter: {fileID: 6632793993468771338}
+  toggleAction: {fileID: -2827542976129750853, guid: 20d9b37b3f44c624a9e1b7761509c13b, type: 3}
+  playerInput: {fileID: 0}
+  gameplayMap: Gameplay
+  uiMap: UI
+  firstSelect: {fileID: 0}
+  manageCursor: 1
